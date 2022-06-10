@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>hello</pattern>
+        <template>Hello, welcome to the career chatbot. To start please type "start".</template>
+    </category>
+    
+    <category>
+    <pattern>start</pattern>
+        <template>Welcome! I am the student career bot for the department of Computer Science. To get started please select below: 
+            <button>
+                <text>Career questions</text>
+                <postback>career questions</postback>
+            </button>    
+        </template>
+</category>
+
+     <category>
+        <pattern>career questions</pattern>
+        <template>Chatbot will ask a couple questions to help pick a computer science career for you.
+        <br></br><br></br>
+        Do you like programming?
+            <button>
+                <text>yes</text>
+                <postback>programming question</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>no coding question</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>programming question</pattern>
+        <template> Would you prefer to work with large sets of data, or to work on challenging programming problems daily?
+            <button>
+                <text>Large data sets</text>
+                <postback>data scientist</postback>
+            </button>
+            <button>
+                <text>Challenging programming</text>
+                <postback>software engineer</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>no coding question</pattern>
+        <template> Would you like to work more closely with people, or data?
+            <button>
+                <text>people</text>
+                <postback>ux pm question</postback>
+            </button>
+            <button>
+                <text>data</text>
+                <postback>database administrator</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>ux pm question</pattern>
+        <template> What sounds more fun to you? Working with users and a development team to ensure that an applications experience is absolutely perfect when it releases, or managing a team and project from start to finish while making tough decisions and hitting deadlines?
+            <button>
+                <text>releasing a perfect application experience</text>
+                <postback>ux researcher</postback>
+            </button>
+            <button>
+                <text>managing and making tough decisions</text>
+                <postback>product manager</postback>
+            </button>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>software engineer</pattern>
+        <template>You should look into becomming a software engineer. Software engineering is a vast field with an almost infinite amount of specialties. Jobs can range from front end, back end, full-stack, or even web development. There will always be different career paths for you to
+        go down with software engineering.
+        <br><br></br></br>
+        <link>
+            <text>Click here to learn more about Software Engineers!</text>
+            <url>https://www.payscale.com/research/US/Job=Software_Engineer/Salary</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>database administrator</pattern>
+        <template>You should look into becomming a database administrator! You will be the protector of a companies most important data. You will be responsible for structuring data in a way that makes it easily accessable, and air tight secure for a company. The data you work with
+        can be extremely sensitive and cannot fall into the wrong hands.
+        <br><br></br></br>
+        <link>
+            <text>Click here to learn more about Database Administrators!</text>
+            <url>https://www.payscale.com/research/US/Job=Database_Administrator_(DBA)/Salary</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>data scientist</pattern>
+        <template>You should look into becomming a data scientist! Data scientists take large amounts of data and turn it into something useable. You will be working with a mixture of programming, math, and statistics to help companies make informed business decisions.
+        <br><br></br></br>
+        <link>
+            <text>Click here to learn more about Data Scientists!</text>
+            <url>https://www.payscale.com/research/US/Job=Data_Scientist/Salary</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>ux researcher</pattern>
+        <template>You should look into becomming a UX Researcher! You will be working directly with developers, UX designers, and users while applications are in development to ensure that the products user experience is nothing short of amazing! Strong communication skills will be
+        imperitive so that you can relay feedback from users accurately to the development team. You will spend most of your day conducting product experiments and user research.
+        <br><br></br></br>
+        <link>
+            <text>Click here to learn more about UX Researchers!</text>
+            <url>https://www.payscale.com/research/US/Job=UX_Researcher/Salary</url>
+        </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>product manager</pattern>
+        <template>You should look into becomming a product manager! As a product manager, you will have your hands all over a project from start to finish. You will closely manage the development team to make sure that deadlines are hit and tough decisions made. You will keep stakeholders
+        informed throughout the entire process of the creation of the product and relay technical information in more simple terms.
+        <br><br></br></br>
+        <link>
+            <text>Click here to learn more about Product Managers!</text>
+            <url>https://www.payscale.com/research/US/Job=Product_Manager%2C_Software/Salary</url>
+        </link>
+        </template>
+    </category>
+</aiml>
